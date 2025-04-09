@@ -42,7 +42,7 @@ body
     display: flex;
     min-width: 375px;
     margin: auto;
-    background: rgb(255 0 0);
+    /* background: rgb(255 0 0); */
     width: 100%;
     height: 100%;
     margin: 0 auto;
@@ -108,8 +108,8 @@ body
 .profileText .imgBx
 {
     position:relative;
-    width: 200px;
-    height:200px;
+    width: 147px;
+    height: 147px;
     /* border-radius: 50%; */
     /* overflow:hidden; */
 
@@ -121,7 +121,7 @@ body
     border-bottom-right-radius: 50%;    /* Coins arrondis */
     overflow: hidden; /* Masque le débordement */
     left: 23px;
-    top: 10px;
+    top: 25px;
 }
 .profileText .imgBx img
 {
@@ -287,8 +287,7 @@ h1 {
     position: absolute;
     width: 0;
     height: 0;
-    border-left: -5px solid transparent;
-    border-right: 332px solid transparent;
+    border-right: 281px solid transparent;
     border-top: 309px solid white;
     top: 0%;
     left: 0px;
@@ -412,7 +411,7 @@ font-weight: 300;
 {
     /* margin-bottom: 0; */ 
     position: relative;
-    top: 157px;
+    top: 105px;
     width: 90%;
 }
 .title2
@@ -469,6 +468,7 @@ align-items: center;
     width: 100%;
     height: 10px;
 background: #c1baba;
+border-radius: 10px;
 }
 .skills .box .percent div 
 {
@@ -477,6 +477,7 @@ top: 0;
 left: 00;
 height: 100%;
 background: rgb(148, 8, 8);
+border-radius: 10px;
 }
 @media print {
     body * {
@@ -543,6 +544,10 @@ background: rgb(148, 8, 8);
     font-size: 25px;
     text-decoration: none;
     font-weight: bold;
+  }
+
+  .colorChange{
+    background-color: rgb(197, 201, 197);
   }
 
 
@@ -717,8 +722,8 @@ width: 200px;
   }
   @media (max-width:414px) {
     .profileText .imgBx{
-        top: 23px;
-        left: -3px;
+        top: 3px;
+        left: 13px;
     }
     .triangle{
         border-right: 163px solid transparent;

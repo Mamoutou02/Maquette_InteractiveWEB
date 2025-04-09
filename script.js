@@ -3,18 +3,23 @@ document.getElementById("changeColor").addEventListener("click", function() {
   
   // 2. On sélectionne l'élément avec la classe "right_Side" (notez le S majuscule)
   const rightSide = document.querySelector('.right_Side');
+  const leftside = document.querySelector('.left_Side')
   
   // 3. On récupère la couleur de fond actuelle de l'élément
   const currentColor = window.getComputedStyle(rightSide).backgroundColor;
-  console.log ("notre couleur=========",);
-  // 4. On vérifie si la couleur actuelle est verte (soit en RGB soit en hexadécimal)
+  //const currentColorLeft = window.getComputedStyle(rightSide).backgroundColor;
+
+  // 4. On vérifie si la couleur actuelle est gris (soit en RGB soit en hexadécimal)
   if (currentColor === "rgb(197, 201, 197)" || currentColor === "rgb(197, 201, 197)") {
     // 5. Si c'est vert, on remet la couleur par défaut (vide)
     rightSide.style.backgroundColor = "";
+    leftside.style.backgroundColor = "";
   } else {
-    // 6. Sinon, on met la couleur verte
+    // 6. Sinon, on met la couleur gris et orange
     rightSide.style.backgroundColor = "rgb(197, 201, 197)";
+    leftside.style.backgroundColor = "rgb(245, 143, 60)";
   }
+  
 });
 
 
