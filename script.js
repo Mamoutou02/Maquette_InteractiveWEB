@@ -1,35 +1,60 @@
+// 1. On sélectionne l'élément avec l'ID "changeColor" et on lui ajoute un écouteur d'événement pour le clic
 document.getElementById("changeColor").addEventListener("click", function() {
-  const rightSide = document.querySelector('.right_Side'); // Notez le S majuscule
-  const currentColor = window.getComputedStyle(rightSide).backgroundColor;
   
-  if (currentColor === "rgb(76, 175, 80)" || currentColor === "#4CAF50") {
+  // 2. On sélectionne l'élément avec la classe "right_Side" (notez le S majuscule)
+  const rightSide = document.querySelector('.right_Side');
+  
+  // 3. On récupère la couleur de fond actuelle de l'élément
+  const currentColor = window.getComputedStyle(rightSide).backgroundColor;
+  console.log ("notre couleur=========",);
+  // 4. On vérifie si la couleur actuelle est verte (soit en RGB soit en hexadécimal)
+  if (currentColor === "rgb(197, 201, 197)" || currentColor === "rgb(197, 201, 197)") {
+    // 5. Si c'est vert, on remet la couleur par défaut (vide)
     rightSide.style.backgroundColor = "";
   } else {
-    rightSide.style.backgroundColor = "#4CAF50";
+    // 6. Sinon, on met la couleur verte
+    rightSide.style.backgroundColor = "rgb(197, 201, 197)";
   }
-}); // Parenthèse corrigée
+});
 
 
+// 1. Déclaration de la fonction qui sera appelée pour générer le PDF
 function downloadPDF() {
+  // 2. Sélection de l'élément HTML (probablement votre CV) à convertir en PDF
   var element = document.getElementById('cv');
-document.getElementById('hide').style.display = 'none';
+  
+  // 3. Masquage d'un élément (peut-être un bouton ou autre) pendant la génération
+  document.getElementById('hide').style.display = 'none';
 
+  // 4. Configuration des options pour la génération du PDF
   var opt = {
-    margin:       0,
-    filename:     'my_cv.pdf',
-    image:        { type: 'png', quality: 1 },
-    html2canvas:  { 
-      scale: 2,
-      scrollX: 285,
-      scrollY: 70,
-      windowWidth: element.scrollWidth,
-      windowHeight: element.scrollHeight,
-      useCORS: true, //pour la securité concernant les liens externes
+    margin: 0,                   // Pas de marges
+    filename: 'my_cv.pdf',       // Nom du fichier PDF généré
+    image: {                     // Options pour les images
+      type: 'png',               // Format PNG
+      quality: 1                 // Qualité maximale (1 = 100%)
     },
-    jsPDF:{ unit: 'mm', format: 'a4', orientation: 'portrait' }
+    html2canvas: {               // Options pour html2canvas (capture d'écran)
+      scale: 2,                  // Échelle x2 pour meilleure qualité
+      scrollX: 285,              // Décalage horizontal
+      scrollY: 70,               // Décalage vertical
+      windowWidth: element.scrollWidth,  // Largeur de la fenêtre = largeur du CV
+      windowHeight: element.scrollHeight, // Hauteur de la fenêtre = hauteur du CV
+      useCORS: true              // Autorise les images externes (cross-origin)
+    },
+    jsPDF: {                     // Options pour jsPDF (génération PDF)
+      unit: 'mm',                // Unité en millimètres
+      format: 'a4',              // Format A4
+      orientation: 'portrait'    // Orientation portrait
+    }
   };
 
-// New Promise-based usage:
-html2pdf().set(opt).from(element).save();
+  // 5. Utilisation de la bibliothèque html2pdf pour générer et télécharger le PDF
+  // Nouvelle syntaxe basée sur les Promises
+  html2pdf().set(opt).from(element).save();
 }
+
+
+// addEventListener est un ecouteur Elle surveille un événement spécifique
+// permet de sélectionner un élément HTML dans la page en utilisant son attribut id.
   

@@ -15,7 +15,10 @@ body
     align-items: center;
     /* min-height:100vh; */
     /* overflow-y: hidden; */
-
+    width: 100%;
+    height: 100%;
+    margin: O;
+    padding: O;
 }
 .photo1 .pt1{
     position: absolute;
@@ -40,7 +43,9 @@ body
     min-width: 375px;
     margin: auto;
     background: rgb(255 0 0);
-    
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
 }
 .container .left_Side
 {
@@ -146,7 +151,7 @@ body
     align-items: center;
     flex-direction: column;
     width: 5px;
-    height: 1049px;
+    height: 220%;
     left: -20px;
     /* BOTTOM: 0; */
     background-color: #800b0d;
@@ -252,9 +257,12 @@ body
     position: absolute;
     width: 100%;
     top: 85px;
-    height: 200px;
+    height: 15%;
     background: #800b0d;
     left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .nom{
     position: absolute;
@@ -262,6 +270,9 @@ body
     top: 46px;
     letter-spacing: 1px;
     font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 h1 {
     color: white;
@@ -270,9 +281,6 @@ h1 {
     color: #d992a7;
 }
     .h {
-    position: absolute;
-    top: 79px;
-    font-size: 23px;
     color: #6F6B6B;
 }
 .triangle{
@@ -303,6 +311,7 @@ h1 {
 .contactInfo
 {
     padding-top: 40px ;
+    color: white;
 }
 .title
 {
@@ -380,7 +389,7 @@ font-weight: 300;
     width: 60%;
     position: relative;
     background: #fff;
-    padding: 40px;
+    padding-left: 5%;
 }
 .about 
 {
@@ -391,7 +400,7 @@ font-weight: 300;
     /* margin-bottom: 50px;  */
     position: relative;
     top: 319px;
-
+    width: 90%;
 }
 .about_3 {
     /* margin-bottom: 50px;  */
@@ -404,6 +413,7 @@ font-weight: 300;
     /* margin-bottom: 0; */ 
     position: relative;
     top: 157px;
+    width: 90%;
 }
 .title2
 {
@@ -551,11 +561,42 @@ background: rgb(148, 8, 8);
   .containe button{
 width: 200px;
   }
+  @media (max-width:768px) {
+    .container{
+     width: 100vh;
+    }
+    
+  }
   @media (max-width: 600px) {
     .about .box {
         flex-direction: column;
+        
     }
-    
+    .profileText .imgBx{
+        top: 56px;
+    }
+    .contactInfo h3{
+        font-size: 13px;
+        margin-left: 17px;
+    }
+    .contactInfo .titleE{
+        font-size: 13px;
+        margin-left: 2px;
+        color: white;
+    }
+    .contactInfo .titleL{
+        font-size: 13px;
+        margin-left: 2px;
+        color: white;
+    }
+    .about:last-child{
+        font-size: 11px;
+        top: 117px;
+
+    }
+    .about_2{
+        top: 229px;
+    }
     .about .box .year_company {
         margin-bottom: 5px;
     }
@@ -585,4 +626,148 @@ width: 200px;
         font-size: 1em;
     }
 }
+@media (max-width:670px) {
+    .contactInfo ul {
+        font-size: 8px;
+    }
+    .nom {
+        font-size: 12px;
+    }
+    .h {
+        font-size: 14px;
+    }
+    .about_2 {
+        font-size: 12px;
+    }
+    
+}
+  @media (max-width: 512px) {
+    .profileText .imgBx {
+        top: 73px;
+    }
+    .contactInfo .titleC  {
+        font-size: 10px;
+        margin-left: 1px;
+        color: white;
+        /* top: 10px; */
+        padding-top: 20px;
+    }
+    
+  }
+  @media (max-width:375px) {
+    .right_Side .lateral{
+        top: 26px;
+
+    }
+    .nom{
+        left: 5px;
+    }
+    .triangle{
+    border-right: 151px solid transparent;
+    border-top: 172px solid white;
+    }
+    .profileText .imgBx {
+        top: -21px;
+        left: 3px;
+    }
+    .contactInfo .titleC {
+        font-size: 13px;
+        margin-left: 17px;
+        color: white;
+        /* top: 10px; */
+        /* padding-top: 20px; */
+        left: -33px;
+        position: relative;
+        width: 140px;
+    }
+    .about_2 {
+        font-size: 12px;
+        top: 220px;
+    }
+    .contactInfo ul li{
+        left: -17px;
+    }
+    .contactInfo .titleE{
+        left: -17px;
+        position: relative;
+
+    }
+    .contactInfo .titleL{
+        left: -17px;
+        position: relative;
+
+    }
+    
+    
+  }
+
   
+  @media (max-width:430px) {
+    .triangle{
+        border-right: 169px solid transparent;
+        border-top: 228px solid white;
+    }
+    .profileText .imgBx {
+        top: 5px;
+        left: 10px;
+    }
+    .container {
+        height: 100vh;
+    }
+  }
+  @media (max-width:414px) {
+    .profileText .imgBx{
+        top: 23px;
+        left: -3px;
+    }
+    .triangle{
+        border-right: 163px solid transparent;
+        border-top: 223px solid white;
+        /* margin-top: 35px; */
+    }
+    @media (max-width:412px) {
+        .profileText .imgBx {
+            top: 9px;
+            left: 10px;
+            
+            
+        }
+      }
+  }
+  @media (max-width:360px) {
+    .triangle{
+        border-right: 185px solid transparent;
+        border-top: 257px solid white;
+    }
+    
+    .profileText .imgBx {
+        top: 48px;
+        left: 10px;
+        
+        
+    }
+  }
+ 
+  @media (max-width:390px) {
+    .triangle{
+        border-right: 160px solid transparent;
+        border-top: 176px solid white;
+    }
+    .container {
+        height: 100%;
+        }
+        .about:last-child {
+            font-size: 11px;
+            top: 117px;
+        }
+        .right_Side .lateral{
+            top: 28px;
+        }
+    .profileText .imgBx {
+        top: -25px;
+        left: 10px;
+        
+        
+    }
+  }
+ 
