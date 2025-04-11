@@ -151,7 +151,7 @@ body
     align-items: center;
     flex-direction: column;
     width: 5px;
-    height: 220%;
+    height: 200%;
     left: -20px;
     /* BOTTOM: 0; */
     background-color: #800b0d;
@@ -175,7 +175,7 @@ body
     width: 17px;
     border-radius: 7px;
     /* margin-top: 45px; */
-    top: 341px;
+    top: 309px;
     position: relative;
 }
 
@@ -186,7 +186,7 @@ body
     width: 17px;
     border-radius: 7px;
     /* margin-top: 45px; */
-    top: 725px;
+    top: 620px;
     position: relative;
 }
 .bar3{
@@ -211,7 +211,7 @@ body
     height: 21px;
     width: 21px;
     border-radius: 50%;
-    top: 545px;
+    top: 500px;
     position: relative;
     /* margin-top: 115px; */
 }
@@ -575,15 +575,44 @@ width: 200px;
   @media (max-width: 600px) {
     .about .box {
         flex-direction: column;
+      
+        
+    }
+    .ligne2{
+        height: 266%;
+        top: -83%;
+    }
+    .bar_1 {
+           
+        /* margin-top: 45px; */
+        top: 320px;
+        
+    }
+    body{
+        height: 100vh;
+    }
+    .cercle_1 {
+        
+        top: 630px;
+       
+    }
+    .bar_2 {
+        
+        top: 779px;
         
     }
     .profileText .imgBx{
-        top: 56px;
+        top: 41px;
     }
     .contactInfo h3{
         font-size: 13px;
         margin-left: 17px;
     }
+    .contactInfo {
+        top: 9%;
+        position: relative;
+    }
+    
     .contactInfo .titleE{
         font-size: 13px;
         margin-left: 2px;
@@ -596,11 +625,11 @@ width: 200px;
     }
     .about:last-child{
         font-size: 11px;
-        top: 117px;
+        top: 334px;
 
     }
     .about_2{
-        top: 229px;
+        /* top: 229px; */
     }
     .about .box .year_company {
         margin-bottom: 5px;
@@ -618,6 +647,9 @@ width: 200px;
         width: 150px;
         height: 150px;
     }
+    .about_2 .contact{
+        top: 15px;
+    }
     
     .left_Side, .right_Side {
         padding: 20px;
@@ -625,6 +657,10 @@ width: 200px;
     
     .nom h1 {
         font-size: 1.5em;
+    }
+    .about_3 {
+  
+        top: 240px;
     }
     
     .nom h3 {

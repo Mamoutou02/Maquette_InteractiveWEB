@@ -11,7 +11,7 @@ document.getElementById("changeColor").addEventListener("click", function() {
 
   // 4. On vérifie si la couleur actuelle est gris (soit en RGB soit en hexadécimal)
   if (currentColor === "rgb(197, 201, 197)" || currentColor === "rgb(197, 201, 197)") {
-    // 5. Si c'est vert, on remet la couleur par défaut (vide)
+    // 5. Si c'est gris, on remet la couleur par défaut (vide)
     rightSide.style.backgroundColor = "";
     leftside.style.backgroundColor = "";
   } else {
