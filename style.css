@@ -139,7 +139,7 @@ body
     align-items: center;
     flex-direction: column;
     width: 5px;
-    height: 757px;
+    height: 111vh;
     left: -20px;
     /* BOTTOM: 0; */
     background-color: rgb(202, 198, 198);
@@ -191,11 +191,11 @@ body
 }
 .bar3{
     background: white;
-    height: 56px;
+    height: 8%;
     width: 17px;
     border-radius: 7px;
     /* margin-top: 45px; */
-    top: 419px;
+    top: 51%;
 
     position: relative;
 }
@@ -230,7 +230,7 @@ body
     height: 21px;
     width: 21px;
     border-radius: 50%;
-    top: 59px;
+    top: 11%;
     /* margin-top: 115px;
 }
 .cercle4{
@@ -249,7 +249,7 @@ body
     height: 21px;
     width: 21px;
     border-radius: 50%;
-    top: 116px;
+    top: 20%;
 
     /* margin-top: 115px; */
 }
@@ -558,258 +558,251 @@ border-radius: 10px;
     overflow: hidden;
     align-items: center;
     flex-direction: column;
-    display: flex
-;
+    display: flex;
     position: relative;
     justify-content: center;
   }
   .containe button{
 width: 200px;
   }
-  @media (max-width:768px) {
-    .container{
-     width: 100vh;
-    }
-    
-  }
-  @media (max-width: 600px) {
-    .about .box {
-        flex-direction: column;
-      
-        
-    }
-    .ligne2{
-        height: 266%;
-        top: -83%;
-    }
-    .bar_1 {
-           
-        /* margin-top: 45px; */
-        top: 320px;
-        
-    }
-    body{
+  @media (max-width:1024px) {
+    .container {
+        max-width: 1024px;
+        min-width: 375px;
+        margin: auto;
         height: 100vh;
     }
-    .cercle_1 {
-        
-        top: 630px;
+    /* .ligne {
+        top: 20vh;
+        height: 77vh;
+    }
+    .bar3 {
+        background: white;
+        top: 64%;
+        position: relative;
+    }
+    .cercle5 {
+        position: relative;
+        background: white;
+        top: 30%;
+        /* margin-top: 115px; */
+    /* }
+    .cercle3 {
+        position: relative;
+        top: 24%;
+    }
+    .cercle2 {
+        position: relative;
+        top: 8%;
+        /* margin-top: 115px; */
+    /* }
+    .cercle1 {
+        position: relative;
+        top: 6.4%;
+    } 
+    .bar1 {
+        top: 3%;
+        position: relative;
+    }  */
+    .triangle {
        
+        border-right: 411px solid transparent;
+        border-top: 309px solid white;
+        top: 0%;
+        left: 0px;
     }
-    .bar_2 {
+    .profileText .imgBx {
+        left: 7px;
+    }
+    .contactInfo.language{
+        top: 31%;
+
+    }
+    .contactInfo.education{
+        position: relative;
+        top: 18%;
+    }
+    .about:last-child {
+        top: 53vw; 
+    }
+    .about_2 {
         
-        top: 779px;
+        top: 28%;
         
-    }
-    .profileText .imgBx{
-        top: 41px;
-    }
-    .contactInfo h3{
-        font-size: 13px;
-        margin-left: 17px;
     }
     .contactInfo {
         top: 9%;
         position: relative;
-    }
-    
-    .contactInfo .titleE{
-        font-size: 13px;
-        margin-left: 2px;
-        color: white;
-    }
-    .contactInfo .titleL{
-        font-size: 13px;
-        margin-left: 2px;
-        color: white;
-    }
-    .about:last-child{
-        font-size: 11px;
-        top: 334px;
 
     }
-    .about_2{
-        /* top: 229px; */
+    .about_3{
+        
+        top: 26.28vw;
     }
-    .about .box .year_company {
-        margin-bottom: 5px;
-    }
+   
     
-    .interest ul {
-        grid-template-columns: repeat(1, 1fr);
+  }
+  @media (max-width:820px) {
+    .about:last-child {
+        
+        top: 42vw;
+        
     }
-    
-    .skills .box {
-        grid-template-columns: repeat(1, 1fr);
+    /* .ligne {
+        top: 21vh;
+        height: 75vh;
+    } */
+    .contactInfo.language{
+        top: 31vw;
+
     }
-    
     .profileText .imgBx {
-        width: 150px;
-        height: 150px;
-    }
-    .about_2 .contact{
-        top: 15px;
-    
-    }
-    
-    .left_Side, .right_Side {
-        padding: 20px;
-    }
-    
-    .nom h1 {
-        font-size: 1.5em;
-    }
-    .about_3 {
-  
-        top: 240px;
-    }
-    
-    .nom h3 {
-        font-size: 1em;
-    }
-}
-@media (max-width:670px) {
-    .contactInfo ul {
-        font-size: 8px;
-    }
-    .nom {
-        font-size: 12px;
-    }
-    .h {
-        font-size: 14px;
-    }
-    .about_2 {
-        font-size: 12px;
-    }
-    
-}
-  @media (max-width: 512px) {
-    .profileText .imgBx {
-        top: 73px;
-    }
-    .contactInfo .titleC  {
-        font-size: 10px;
-        margin-left: 1px;
-        color: white;
-        /* top: 10px; */
-        padding-top: 20px;
+        left: -5px;
+        top: 7vw;
     }
     
   }
-  @media (max-width:375px) {
-    .right_Side .lateral{
-        top: 26px;
-
-    }
-    .nom{
-        left: 5px;
-    }
-    .triangle{
-    border-right: 151px solid transparent;
-    border-top: 172px solid white;
-    }
-    .profileText .imgBx {
-        top: -21px;
-        left: 3px;
-    }
-    .contactInfo .titleC {
-        font-size: 13px;
-        margin-left: 17px;
-        color: white;
-        /* top: 10px; */
-        /* padding-top: 20px; */
-        left: -33px;
-        position: relative;
-        width: 140px;
-    }
-    .about_2 {
-        font-size: 12px;
-        top: 220px;
-    }
-    .contactInfo ul li{
-        left: -17px;
-    }
-    .contactInfo .titleE{
-        left: -17px;
-        position: relative;
-
-    }
-    .contactInfo .titleL{
-        left: -17px;
-        position: relative;
-
-    }
-    
-    
-  }
-
-  
-  @media (max-width:430px) {
-    .triangle{
-        border-right: 169px solid transparent;
-        border-top: 228px solid white;
-    }
-    .profileText .imgBx {
-        top: 5px;
-        left: 10px;
-    }
+  @media (max-width:768px) {
     .container {
-        height: 100vh;
+        min-width: 375px;
+        height: 115vh;
     }
+    .triangle {
+        border-right: 306px solid transparent;
+        
+    }
+    .profileText .imgBx {
+        left: -9px;
+    }
+    
   }
-  @media (max-width:414px) {
-    .profileText .imgBx{
-        top: 3px;
-        left: 13px;
+  @media (max-width:412px) {
+    .container {
+        height: 136vh;
+        
     }
-    .triangle{
+   
+    .triangle {
         border-right: 163px solid transparent;
-        border-top: 223px solid white;
-        /* margin-top: 35px; */
+        border-top: 207px solid white;
     }
-    @media (max-width:412px) {
-        .profileText .imgBx {
-            top: 9px;
-            left: 10px;
-            
-            
-        }
-      }
+    .profileText .imgBx {
+        left: 7px;
+        top: 2%;
+    }
+    .right_Side .lateral{
+        top: 2%;
+    }
+    .contactInfo.education {
+        top: 7%; 
+    }
+    .contactInfo {
+        top: 2%;
+    }
+    .contactInfo.language {
+        top: 27vw;
+    }
+    
   }
   @media (max-width:360px) {
-    .triangle{
-        border-right: 185px solid transparent;
-        border-top: 257px solid white;
+    .about_2 {
+        top: 20%;
     }
-    
-    .profileText .imgBx {
-        top: 48px;
-        left: 10px;
-        
-        
+    .nom {
+    position: absolute;
+    left: 25px;
+    top: 39%;
+    font-size: 8px;
     }
-  }
- 
-  @media (max-width:390px) {
-    .triangle{
-        border-right: 160px solid transparent;
-        border-top: 176px solid white;
+    .right_Side .lateral{
+        height: 11%;
+    }
+    .triangle {
+        border-right: 149px solid transparent;
+        border-top: 207px solid white;
     }
     .container {
-        height: 100%;
-        }
-        .about:last-child {
-            font-size: 11px;
-            top: 117px;
-        }
-        .right_Side .lateral{
-            top: 28px;
-        }
-    .profileText .imgBx {
-        top: -25px;
-        left: 10px;
-        
+        height: 174vh;
         
     }
+    .about:last-child {
+        top: 96vw;
+    }
+    .about_3 {
+        top: 45.28vw;
+    }
+    .contactInfo.education {
+        top: 7%;
+        font-size: 12px;
+    }
+    .contactInfo.language {
+        top: 62vw;
+        font-size: 12px;
+    }
+    .contactInfo {
+        top: 2%;
+        font-size: 12px;
+    }
+    .contactInfo ul li span {
+        color: #fff;
+        font-size: 7px;
+    }
+    
   }
+  @media (max-width:430px) {
+    .container {
+        min-width: 375px;
+        height: 136vh;
+    }
+    .triangle {
+        border-right: 171px solid transparent;
+        border-top: 207px solid white;
+    }
+    .profileText .imgBx {
+        left: 3px;
+        position: relative;
+        top: 2%;
+    }
+    .right_Side .lateral{
+        top: 35px;
+    }
+    .contactInfo.education {
+        position: relative;
+        top: 7%;
+    }
+    .contactInfo {
+        top: 4%;
+        position: relative;
+    }
+    
+  }
+  @media (max-width:390px) {
+    .container {
+        min-width: 375px;
+        height: 150vh;
+    }
+    .profileText .imgBx {
+        left: 10px;
+    }
+    
+  }
+  @media (max-width:414px) {
+    .container {
+        /* min-width: 375px; */
+        height: 152vh;
+    }
+    .profileText .imgBx {
+        left: 10px;
+    }
+    
+  }
+  @media (max-width:712px) {
+    .profileText .imgBx {
+        left: 2px;
+    }
+    
+  }
+ 
+  
+
  
