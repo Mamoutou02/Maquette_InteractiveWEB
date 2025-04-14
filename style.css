@@ -138,11 +138,11 @@ body
 .ligne{
     width: 3px;
     height: 180vh;
-    background-color: rebeccapurple;
+    background-color: white;
     position: absolute;
     left: -14%;
     z-index: 0;
-    top: -35%;
+    top: 35%;
     
 }
 .ligne2{
@@ -162,11 +162,12 @@ body
 }
 .bar1{
     background: white;
-    height: 56px;
+    height: 3%;
     width: 17px;
     border-radius: 7px;
+    right: 6px;
     /* margin-top: 45px; */
-    top: -9px;
+    top: 19%;
     position: relative;
 }
 .bar_1{
@@ -195,16 +196,19 @@ body
     width: 17px;
     border-radius: 7px;
     /* margin-top: 45px; */
-    top: 72%;
+    top: 68%;
     position: relative;
     right: 6px;
 }
 .cercle1{
+    position: relative;
     background: white;
     height: 21px;
     width: 21px;
     border-radius: 50%;
+    top: 20%;
     /* margin-top: 115px; */
+    right: 7px;
 }
 .cercle_1{
     background: #800b0d;
@@ -221,8 +225,9 @@ body
     height: 21px;
     width: 21px;
     border-radius: 50%;
-    top: 16px;
+    top: 27%;
     /* margin-top: 115px; */
+    right: 7px;
 }
 .cercle3{
     position: relative;
@@ -230,7 +235,7 @@ body
     height: 21px;
     width: 21px;
     border-radius: 50%;
-    top: 50%;
+    top: 58%;
     right: 7px;
     /* margin-top: 115px;
 }
@@ -250,7 +255,7 @@ body
     height: 21px;
     width: 21px;
     border-radius: 50%;
-    top: 41%;
+    top: 35%;
     /* margin-top: 115px; */
     right: 7px;
 
