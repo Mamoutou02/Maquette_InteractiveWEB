@@ -46,6 +46,7 @@ body
     width: 21cm;
     height: 29.7cm;
     margin: 0 auto;
+    overflow-y: hidden;
 }
 .container .left_Side
 {
@@ -135,16 +136,14 @@ body
     
 }
 .ligne{
+    width: 3px;
+    height: 180vh;
+    background-color: rebeccapurple;
     position: absolute;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 5px;
-    height: 111vh;
-    left: -20px;
-    /* BOTTOM: 0; */
-    background-color: rgb(202, 198, 198);
-    top: 255px;
+    left: -14%;
+    z-index: 0;
+    top: -35%;
+    
 }
 .ligne2{
     position: absolute;
@@ -192,13 +191,13 @@ body
 }
 .bar3{
     background: white;
-    height: 8%;
+    height: 3%;
     width: 17px;
     border-radius: 7px;
     /* margin-top: 45px; */
-    top: 51%;
-
+    top: 72%;
     position: relative;
+    right: 6px;
 }
 .cercle1{
     background: white;
@@ -231,7 +230,8 @@ body
     height: 21px;
     width: 21px;
     border-radius: 50%;
-    top: 11%;
+    top: 50%;
+    right: 7px;
     /* margin-top: 115px;
 }
 .cercle4{
@@ -250,7 +250,9 @@ body
     height: 21px;
     width: 21px;
     border-radius: 50%;
-    top: 20%;
+    top: 41%;
+    /* margin-top: 115px; */
+    right: 7px;
 
     /* margin-top: 115px; */
 }
@@ -310,7 +312,7 @@ h1 {
 }
 .contactInfo
 {
-    padding-top: 40px ;
+    padding-top: 90px;
     color: white;
 }
 .title
